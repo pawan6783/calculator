@@ -2,6 +2,7 @@ import  React, {Component} from 'react';
 import '../stylesheets/App.css';
 import Calculator from '../components/Calculator';
 import DigitalClock from './DigitalClock';
+import Test from './Test';
 
 class App extends Component{
 
@@ -62,13 +63,14 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-        <Calculator
+        {/* <Calculator
         result = {this.state.result}
         onClick = {(event) => this.onClickHandler(event)}
         ></Calculator>
         <div>
           <DigitalClock></DigitalClock>
-        </div>
+        </div> */}
+        <Test></Test>
       </div>
     )
   }
