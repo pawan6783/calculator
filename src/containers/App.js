@@ -1,6 +1,7 @@
 import  React, {Component} from 'react';
 import '../stylesheets/App.css';
 import Calculator from '../components/Calculator';
+import DigitalClock from './DigitalClock';
 
 class App extends Component{
 
@@ -65,6 +66,9 @@ class App extends Component{
         result = {this.state.result}
         onClick = {(event) => this.onClickHandler(event)}
         ></Calculator>
+        <div>
+          <DigitalClock></DigitalClock>
+        </div>
       </div>
     )
   }

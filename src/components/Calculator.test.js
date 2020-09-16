@@ -30,11 +30,11 @@ describe("Testing of <Calculator/> component", () => {
         expect(wrapper.find('label').text()).toBe("hello");
     });
 
-    it("should return function on click ", () => {
-        const onClickHandler = jest.fn();
+    // it("should return function on click ", () => {
+    //     const onClickHandler = jest.fn();
 
-        const wrapper = shallow(<Calculator onClick = {onClickHandler}></Calculator>);
-        wrapper.find('button').simulate('onClick');
-        expect(onClickHandler).toBeTruthy();
-    });
+    //     const wrapper = shallow(<Calculator onClick = {onClickHandler}></Calculator>);
+    //     wrapper.find('button').simulate('onClick');
+    //     expect(onClickHandler).toBeTruthy();
+    // });
 });
