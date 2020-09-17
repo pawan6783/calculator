@@ -74,6 +74,7 @@ class Test extends Component{
     render(){
         return(
             <div>
+                <h1>Date Picker</h1>
                 <div> The last working day of month = {this.state.day}</div>
                 <input 
                 type="date" id="text" 

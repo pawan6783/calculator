@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing of <DigitalClock/> component should match \`DigitalClock\` co with text 1`] = `ShallowWrapper {}`;
+
+exports[`Testing of <DigitalClock/> component should match \`DigitalClock\` component with snapshot  1`] = `ShallowWrapper {}`;
+
+exports[`Testing of <DigitalClock/> component should match \`DigitalClock\` component with snapshot with no props 1`] = `ShallowWrapper {}`;
+
+exports[`Testing of <DigitalClock/> component should match \`DigitalComponent\` element with text 1`] = `ShallowWrapper {}`;
+
+exports[`Testing of <DigitalClock/> component should return \`\` element with text 1`] = `ShallowWrapper {}`;
+
+exports[`Testing of <DigitalClock/> component should return one \`h1\` element with text 1`] = `ShallowWrapper {}`;
