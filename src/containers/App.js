@@ -62,15 +62,13 @@ class App extends Component{
 
   render(){
     return (
-      <div className="App">
+      <div className="row">
         <Calculator
         result = {this.state.result}
         onClick = {(event) => this.onClickHandler(event)}
         ></Calculator>
-        <div>
+        
           <DigitalClock></DigitalClock>
-        </div>
-        <Test></Test>
       </div>
     )
   }

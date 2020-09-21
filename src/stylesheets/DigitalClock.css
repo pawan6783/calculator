@@ -51,3 +51,19 @@
   .slider.round:before {
     border-radius: 50%;
   }
+
+  .face {
+    background: rgba(0, 0, 0, .1);
+    border-radius: 50%;
+    height: 296px;
+    left: 52px;
+    padding: 165px 40px 0;
+    position: absolute;
+    width: 296px;
+    text-align: center;
+    top: 52px;
+    float: right;
+    position: relative;
+  }
+
+ 

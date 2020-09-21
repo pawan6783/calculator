@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import '../stylesheets/Test.css';
 
 class Test extends Component{
     constructor(props){
@@ -73,15 +74,19 @@ class Test extends Component{
 
     render(){
         return(
-            <div>
-                <h1>Date Picker</h1>
+            <div className="wrapper ">
+                <div>      
+                    <h1 style={{textAlign:"right"}}>Date Picker</h1>
+                </div>
                 <div> The last working day of month = {this.state.day}</div>
-                <input 
+                <div>
+                <input className="center"
                 type="date" id="text" 
                 placeholder="Enter Date" 
                 onChange= {this.onDateChangeHandler} ></input>
-
-                <button id = "btn" onClick={this.onClickHandler}>Click</button>
+                </div>
+               
+                <button id = "btn"  onClick={this.onClickHandler}>Click</button>
                 
             </div>
         );

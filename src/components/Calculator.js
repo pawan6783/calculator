@@ -1,45 +1,32 @@
 import React from 'react';
 import '../stylesheets/Calculator.css';
+import '../stylesheets/Calculator.css';
 
 const Calculator = props => {
     return(
         <div>
-            <center>
 
-                <h1>Calculator</h1>
-            <table >
-               
-                <tr  className="text">
-                    <td colSpan="4"><label id="label">{props.result}</label></td>
-                </tr>
-                <tr>
-                    <td colSpan="3"><button id="clear" onClick = {props.onClick}>clear</button></td>
-                    <td><button id="%" onClick = {props.onClick}>%</button></td>
-                </tr>
-                <tr>
-                    <td><button id="7" onClick = {props.onClick}>7</button></td>
-                    <td><button id="8" onClick = {props.onClick}>8</button></td>
-                    <td><button id="9" onClick = {props.onClick}>9</button></td>
-                    <td><button id="-" onClick = {props.onClick}>-</button></td>
-
-                </tr>
-                <tr>
-                    <td><button id="4" onClick = {props.onClick}>4</button></td>
-                    <td><button id="5" onClick = {props.onClick}>5</button></td>
-                    <td><button id="6" onClick = {props.onClick}>6</button></td>
-                    <td><button id="+" onClick = {props.onClick}>+</button></td>
-
-                </tr>
-                <tr>
-                    <td><button id="1" onClick = {props.onClick}>1</button></td>
-                    <td><button id="2" onClick = {props.onClick}>2</button></td>
-                    <td><button id="3" onClick = {props.onClick}>3</button></td>
-                    <td><button id="=" onClick = {props.onClick}>=</button></td>
-
-                </tr>
+                <h1 style={{textAlign: "left"}}>Calculator</h1>            
                 
-            </table>
-            </center>
+                <div className="wrapper">
+                    
+                    <div id="label" className="box1"><h1>{props.result}</h1></div>
+
+                    <button id="clear" className="box2" onClick = {props.onClick}>clear</button>
+                    <button id="%" onClick = {props.onClick}>%</button>
+                    <button id="7" onClick = {props.onClick}>7</button>
+                    <button id="8" onClick = {props.onClick}>8</button>
+                    <button id="9" onClick = {props.onClick}>9</button>
+                    <button id="-" onClick = {props.onClick}>-</button>
+                    <button id="4" onClick = {props.onClick}>4</button>
+                    <button id="5" onClick = {props.onClick}>5</button>
+                    <button id="6" onClick = {props.onClick}>6</button>
+                    <button id="+" onClick = {props.onClick}>+</button>
+                    <button id="1" onClick = {props.onClick}>1</button>
+                    <button id="2" onClick = {props.onClick}>2</button>
+                    <button id="3" onClick = {props.onClick}>3</button>
+                    <button id="=" onClick = {props.onClick}>=</button>   
+            </div>
         </div>
     );
 }

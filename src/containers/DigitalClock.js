@@ -30,8 +30,9 @@ const DigitalClock = props => {
     setInterval(updateTime,1000);
 
     return(
-        <div>
-            <h1>Digital Clock</h1>
+        <div >
+            <h1 style={{textAlign: "center"}}>Digital Clock</h1>
+            <div className="face">
             <label className="switch">
                 <input type="checkbox" onChange = {onChangeHandler}/>
                 <span className="slider round"></span>
@@ -44,6 +45,9 @@ const DigitalClock = props => {
                 </Moment> : null
                 }
             </h4>
+
+            </div>
+           
         </div>
     );
 }
